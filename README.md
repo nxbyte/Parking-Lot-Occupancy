@@ -11,7 +11,7 @@ The **Parking Lot Availability and Traffic Prediction System** provides commuter
 
 ## Overall Architecture
 
-![Overall Architecture](https://github.com/nextseto/Parking-Lot-Occupancy/raw/master/docs/images/overall_system.png)
+![Overall Architecture](https://github.com/nextseto/Parking-Lot-Occupancy/raw/master/assets/overall_system.png)
 
 ## Website
 
