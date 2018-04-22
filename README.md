@@ -11,25 +11,29 @@ The **Parking Lot Availability and Traffic Prediction System** provides commuter
 
 ## Overall Architecture
 
-![Overall Architecture](https://raw.githubusercontent.com/nextseto/Parking-Lot-Occupancy/master/docs/images/overall_system.png)
+![Overall Architecture](https://github.com/nextseto/Parking-Lot-Occupancy/raw/master/docs/images/overall_system.png)
+
+## Website
+
+More information can be found at [this website](https://parkinglotavailability18.pages.tcnj.edu/?page_id=45) hosted by The College of New Jersey.
 
 ## Credits
 
 **Core Team**
 
-- Warren Seto (Computer Engineer)
-- Nikita Eisenhauer (Electrical Engineer)
-- Stephanie Fournier (Electrical Engineer)
-- Matthew Cook (Computer Engineer)
+- Warren Seto (Computer Engineer, Class of 2018)
+- Nikita Eisenhauer (Electrical Engineer, Class of 2018)
+- Stephanie Fournier (Electrical Engineer, Class of 2018)
+- Matthew Cook (Computer Engineer, Class of 2018)
 - Dr. Larry Pearlstein (Advisor)
 
 **With help from...**
 
-- Michael Steeil
-- Grant Cignarella 
-- Joshua Acker 
-- Lindsey Abramson
-- Elisa Idrobo
-- Philip Franco
-- Justin Cheng
+- Michael Steeil (TCNJ Engineering Laboratory Technician)
+- Grant Cignarella (Mechanical Engineer, Class of 2020)
+- Joshua Acker (Mechanical Engineer, Class of 2018)
+- Lindsey Abramson (Computer Science, Class of 2018)
+- Elisa Idrobo (Computer Science, Class of 2018)
+- Philip Franco (Electrical Science, Class of 2019)
+- Justin Cheng (Mechanical Engineer, Class of 2017)
 
