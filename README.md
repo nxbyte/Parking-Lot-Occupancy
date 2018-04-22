@@ -35,6 +35,6 @@ More information can be found at [this website](https://parkinglotavailability18
 - Joshua Acker (Mechanical Engineer, Class of 2018)
 - Lindsey Abramson (Computer Science, Class of 2018)
 - Elisa Idrobo (Computer Science, Class of 2018)
-- Philip Franco (Electrical Science, Class of 2019)
+- Philip Franco (Electrical Engineer, Class of 2019)
 - Justin Cheng (Mechanical Engineer, Class of 2017)
 
