@@ -1,0 +1,16 @@
+# R1 systemd service
+[Unit]
+Description=Service to Update and run processes for R1
+
+[Service]
+ExecStartPre=-/home/pi/boot.py
+ExecStart=/home/pi/R1/nodeJS/bin/node /home/pi/R1/app/CORE.js
+Restart=on-failure
+ExecStop=/bin/kill -INT $MAINPID
+StandardOutput=null
+Restart=always
+TimeoutSec=infinity
+
+[Install]
+WantedBy=multi-user.target
+Alias=R1.service
