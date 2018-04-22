@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Status | TCNJ Traffic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+    <style>
+        .box {
+            width: 300px;
+            margin: 5% auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav role="navigation" aria-label="main navigation" class="navbar is-link">
+        <div class="navbar-brand">
+            <a class="navbar-item" style="cursor: default;">
+                <i class="em em-vertical_traffic_light"></i> &nbsp;&nbsp;<b><%= appName %></b>
+</a>
+            <a class="navbar-item" href="../">
+      <i class="em em-oncoming_automobile"></i></i></i> &nbsp;&nbsp;<b>Status</b>
+    </a>
+
+            <a class="navbar-item" href="./trend">
+      <i class="em em-chart_with_upwards_trend"></i> &nbsp;&nbsp;<b>Trends</b>
+    </a>
+        </div>
+    </nav>
+
+    <% for (var count = 0, length = units.length; count < length; count++) {%>
+        <div class="box">
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong><%= units[count].name %></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <%if (units[count].current_capacity > 10) { %>
+                                <i class="em em-white_check_mark"></i>
+                                <% } %>
+
+                                    <%if (units[count].current_capacity <= 10 && units[count].current_capacity >= 5) { %>
+                                        <i class="em em-warning"></i>
+                                        <% } %>
+
+                                            <%if (units[count].current_capacity < 5) { %>
+                                                <i class="em em-no_entry_sign"></i>
+                                                <% } %>
+
+                                                    <br><br>There are
+                                                    <%= units[count].current_capacity %> spots left!
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <% } %>
+</body>
+
+</html>

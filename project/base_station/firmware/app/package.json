@@ -1,0 +1,24 @@
+{
+    "name": "npoint",
+    "version": "1.0.0",
+    "description": "An open source web app that tests and performs metrics on other web apps/services",
+    "main": "CORE.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "open",
+        "source",
+        "web",
+        "test",
+        "benchmark"
+    ],
+    "dependencies": {
+        "socket.io-client": "^2.0.3"
+    },
+    "engines": {
+        "node": ">= 8.5.0"
+    },
+    "author": "Warren Seto",
+    "license": "MIT"
+}

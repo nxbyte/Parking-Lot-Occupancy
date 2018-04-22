@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trends | TCNJ Traffic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            
+        }
+        .box {
+            width: 90%;
+            margin: 5% auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav role="navigation" aria-label="main navigation" class="navbar is-link">
+        <div class="navbar-brand">
+            <a class="navbar-item" style="cursor: default;">
+                <i class="em em-vertical_traffic_light"></i> &nbsp;&nbsp;<b><%= appName %></b>
+</a>
+            <a class="navbar-item" href="../">
+      <i class="em em-oncoming_automobile"></i></i></i> &nbsp;&nbsp;<b>Status</b>
+    </a>
+
+            <a class="navbar-item" href="./trend">
+      <i class="em em-chart_with_upwards_trend"></i> &nbsp;&nbsp;<b>Trends</b>
+    </a>
+        </div>
+    </nav>
+
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <div id="graph1">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <div id="graph2">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script>
+        var layout = {
+            title: 'Armstrong Lower Lot',
+            xaxis: {
+                title: 'Time',
+                titlefont: {
+                    size: 18,
+                    color: '#7f7f7f'
+                }
+            },
+            yaxis: {
+                title: 'Space Left',
+                titlefont: {
+                    size: 18,
+                    color: '#7f7f7f'
+                },
+                range: [0, 70]
+            }
+        };
+        var data = <%- trend_data %>
+
+        Plotly.newPlot('graph1', data, layout);
+
+        layout.title = "Armstrong Upper Lot"
+
+        Plotly.newPlot('graph2', data, layout);
+    </script>
+</body>
+
+</html>
