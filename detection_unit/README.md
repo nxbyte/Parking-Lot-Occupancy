@@ -30,6 +30,7 @@ To accurately detect a vehicle, the group wanted to use all current infrastructu
 
 Through testing with driving vehicles through the entrance of the parking lot multiple times, the group determined that the Detection Unit will count an object as a valid vehicle entering the parking lot when both sensors reach a certain state. When the entrance to a parking lot has no vehicles entering, the ultrasonic sensor would read the maximum range value (approximately 450 cm) and the infrared distance sensor would read a constant 92 cm. When a vehicle enters the parking lot, the ultrasonic sensor would detect a drop in distance over a period of 4 seconds which will cause the infrared distance sensor to begin tracking the position of the gate unit for 5 seconds. Since the gate unit is near the maximum range of the distance sensor, when the gate unit opens the distance sensor will output the maximum range (2 meters). When both the ultrasonic sensor reads a drop in distance and the infrared distance sensor outputs its maximum range value, a vehicle is counted and sent to a centralized server. After performing various experiments with 100 entering vehicles, the group found that this method allowed the Detection Unit to detect 98% of authorized vehicles entering the parking lot. 
 
+![Sensor Graph](https://github.com/nextseto/Parking-Lot-Occupancy/raw/master/assets/detection_graph.png)
 
 ## Power Subsystem
 

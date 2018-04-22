@@ -1,4 +1,5 @@
 # Parking Lot Occupancy
+
 Undergraduate Senior Project focusing on detecting vehicle occupancy for parking lots
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/nextseto/Parking-Lot-Occupancy/master/LICENSE)
