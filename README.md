@@ -14,10 +14,6 @@ The **Parking Lot Availability and Traffic Prediction System** provides commuter
 
 ![Overall Architecture](https://github.com/nextseto/Parking-Lot-Occupancy/raw/master/assets/overall_system.png)
 
-## Website
-
-More information can be found at [this website](https://parkinglotavailability18.pages.tcnj.edu/?page_id=45) hosted by The College of New Jersey.
-
 ## Credits
 
 **Core Team**
